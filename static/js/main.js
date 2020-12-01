@@ -1,7 +1,7 @@
 "use strict";
 
 $(document).ready(function () {
-  var anchors = ['firstPage', 'secondPage', 'thirdPage', 'fourthPage'];
+  var anchors = ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fivesPage'];
 
   function onLeaveHandler() {
     $('.header__navigation-opened').children().removeClass('active_link');
