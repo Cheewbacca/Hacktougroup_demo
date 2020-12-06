@@ -45,6 +45,20 @@
       </header>
       <div id="fullpage">      
         <section class="section">
+          <div id="review">
+            <div class="add_comment__content">
+              <div id="reviewCross"></div>
+              <h2 class="blue_font">Оставить коментарий</h2>
+              <h3 class="headings_font">Оставить коментарий</h3>
+              <form action="">
+                <label class="review_font" for="name">Ваше имя</label>
+                <input class="medium_font" type="text" id="name" name="name">
+                <label class="review_font" for="comment">Коментарий</label>
+                <textarea class="medium_font" name="comment" id="comment"> </textarea>
+                <button class="medium_font" type="submit">Оставить коментарий</button>
+              </form>
+            </div>
+          </div>
           <div class="reviews main_padding first_section">
             <h2 class="blue_font">Отзывы</h2>
             <h3 class="headings_font">Отзывы наших клиентов</h3>
@@ -100,7 +114,7 @@
               </div>
             </div>
             <div class="reviews__new">
-              <p class="regular_font">Тех, кто не зарегистрирован на форумах, мы просим оставлять отзывы здесь:</p><a href="#">
+              <p class="regular_font">Тех, кто не зарегистрирован на форумах, мы просим оставлять отзывы здесь:</p><a href="#" id="add_comment">
                 <div class="plus"></div><span class="menu_font">Добавить комментарий</span></a>
             </div>
           </div>
