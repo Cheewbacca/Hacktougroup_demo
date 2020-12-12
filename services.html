@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static\css\services.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.css"><script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
   <body>
     <section class="section">
@@ -46,11 +46,49 @@
       <div id="fullpage">      
         <section class="section">
           <section class="services">
+            <div id="order">
+              <div class="order_content">
+                <div id="order_cross"></div>
+                <div class="message">
+                  <div class="message__content danger">
+                    <div id="message_cross"></div>
+                    <p class="headings_font">Error</p>
+                  </div>
+                </div>
+                <h2 class="blue_font">Заказать</h2>
+                <h3 class="headings_font">Информация по заказу</h3>
+                <p class="review_font">Внимание! Поля отмеченные * обязательны к заполнению! Остальные поля не обязательны!</p><span class="subtitle_font" id="order_price">Взлом <span class="realTarget"> Vk.com</span> </span>
+                <form class="swiper-container swiper2" id="order_form" action="" method="POST">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide order_content-slide">
+                      <label class="review_font" for="email">Ваш email*</label>
+                      <label class="review_font" for="url">Ссылка на жертву*</label>
+                      <input class="medium_font" type="email" id="email" name="email">
+                      <input class="medium_font" type="url" id="url" name="url">
+                    </div>
+                    <div class="swiper-slide order_content-slide">
+                      <label class="review_font" for="telegram">Ваш телеграм</label>
+                      <label class="review_font" for="info">Дополнительная информация*</label>
+                      <input class="medium_font" type="text" id="telegram" name="telegram">
+                      <textarea class="medium_font" id="info" name="info"></textarea>
+                    </div>
+                    <div class="swiper-slide order_content-slide captcha"><div class="g-recaptcha" data-sitekey="6LdsqgMaAAAAAMYvdPrdUnVqo42nZglnrpgcq3ym" data-theme="dark" data-callback="getCaptcha"></div>
+                      <input class="medium_font" type="submit" value="Заказать">
+                    </div>
+                  </div>
+                </form>
+                <div class="swiper__controls">
+                  <div class="swiper-button-prev2"></div>
+                  <div class="swiper-pagination2"> </div>
+                  <div class="swiper-button-next2"></div>
+                </div>
+              </div>
+            </div>
             <div class="services__content main_padding">
               <div class="all_services">
                 <h2 class="blue_font">Все услуги</h2>
                 <h3 class="headings_font">Наши услуги</h3>
-                <div class="slider swiper-container">
+                <div class="slider swiper-container swiper1">
                   <div class="slider__content swiper-wrapper">
                     <div class="slider__content-item swiper-slide">
                       <h4 class="services_font">Vk.com</h4>
@@ -114,7 +152,63 @@
                           <svg id="cart" xmlns="http://www.w3.org/2000/svg" width="23.206" height="19.942" viewBox="0 0 23.206 19.942">
                             <path id="Path_1134" data-name="Path 1134" d="M22.843,39.146a1.625,1.625,0,0,0-1.269-.606H3.886l-.158-1.132A1.639,1.639,0,0,0,2.112,36H.725a.725.725,0,1,0,0,1.45H2.112a.182.182,0,0,1,.18.156L4.249,51.638a1.639,1.639,0,0,0,1.616,1.406h.786a2.176,2.176,0,1,0,4.1,0h3.875a2.176,2.176,0,1,0,4.1,0H20.3a.725.725,0,1,0,0-1.45H5.865a.182.182,0,0,1-.18-.156L5.5,50.143H19.786a1.641,1.641,0,0,0,1.6-1.29l1.787-8.339a1.624,1.624,0,0,0-.326-1.368ZM9.427,53.769a.725.725,0,1,1-.725-.725A.726.726,0,0,1,9.427,53.769Zm7.977,0a.725.725,0,1,1-.725-.725A.726.726,0,0,1,17.4,53.769ZM21.751,40.21l-1.787,8.339a.183.183,0,0,1-.178.144H5.3l-1.214-8.7H21.574a.181.181,0,0,1,.177.219Z" transform="translate(0 -36.002)" fill="#0096f2"></path>
                           </svg>
-                        </div><span class="menu_font"> Заказать</span></a>
+                        </div><span class="menu_font makeOrder"> Заказать</span></a>
+                    </div>
+                    <div class="slider__content-item swiper-slide">
+                      <h4 class="services_font">Yandex.ru</h4>
+                      <ul> 
+                        <li><span class="blue_font">(Архив диалогов VK.com)</span>
+                          <div class="price">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14.351" height="26.421" viewBox="0 0 14.351 26.421">
+                              <g id="dollar-tag" transform="translate(-109.301)">
+                                <g id="Group_366" data-name="Group 366" transform="translate(109.301)">
+                                  <g id="Group_365" data-name="Group 365" transform="translate(0)">
+                                    <path id="Path_1127" data-name="Path 1127" d="M123.16,8.951l-3.633-4.594a3.912,3.912,0,0,0-2.5-1.436V.552a.552.552,0,1,0-1.1,0V2.921a3.839,3.839,0,0,0-2.49,1.436l-3.644,4.6a2.3,2.3,0,0,0-.491,1.414v13.8a2.262,2.262,0,0,0,2.269,2.253h9.8a2.262,2.262,0,0,0,2.28-2.242V10.37A2.328,2.328,0,0,0,123.16,8.951ZM116.479,8.3a1.607,1.607,0,1,1-1.607,1.607A1.6,1.6,0,0,1,116.479,8.3Zm6.074,15.864a1.157,1.157,0,0,1-1.176,1.149h-9.8a1.157,1.157,0,0,1-1.176-1.149V10.37a1.159,1.159,0,0,1,.254-.729l3.639-4.6a2.769,2.769,0,0,1,1.629-1V7.256a2.713,2.713,0,1,0,1.1,0V4.042a2.791,2.791,0,0,1,.657.221,2.754,2.754,0,0,1,.966.779L122.3,9.635a1.185,1.185,0,0,1,.254.734Z" transform="translate(-109.301)" fill="#d9efff"></path>
+                                  </g>
+                                </g>
+                                <g id="Group_368" data-name="Group 368" transform="translate(114.633 15.549)">
+                                  <g id="Group_367" data-name="Group 367" transform="translate(0)">
+                                    <path id="Path_1128" data-name="Path 1128" d="M209.479,286.189a1.849,1.849,0,0,0-1.761-1.292.74.74,0,1,1,.74-.74.552.552,0,0,0,1.1,0,1.849,1.849,0,0,0-1.292-1.761v-.243a.552.552,0,1,0-1.1,0v.243a1.845,1.845,0,0,0,.552,3.606.74.74,0,1,1-.74.74.552.552,0,0,0-1.1,0,1.849,1.849,0,0,0,1.292,1.761v.276a.552.552,0,0,0,1.1,0V288.5A1.848,1.848,0,0,0,209.479,286.189Z" transform="translate(-205.871 -281.6)" fill="#d9efff"></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg><span class="subtitle_font">от 100$</span>
+                          </div>
+                        </li>
+                      </ul><a class="order" href="#">
+                        <div class="order-truck">
+                          <svg id="cart" xmlns="http://www.w3.org/2000/svg" width="23.206" height="19.942" viewBox="0 0 23.206 19.942">
+                            <path id="Path_1134" data-name="Path 1134" d="M22.843,39.146a1.625,1.625,0,0,0-1.269-.606H3.886l-.158-1.132A1.639,1.639,0,0,0,2.112,36H.725a.725.725,0,1,0,0,1.45H2.112a.182.182,0,0,1,.18.156L4.249,51.638a1.639,1.639,0,0,0,1.616,1.406h.786a2.176,2.176,0,1,0,4.1,0h3.875a2.176,2.176,0,1,0,4.1,0H20.3a.725.725,0,1,0,0-1.45H5.865a.182.182,0,0,1-.18-.156L5.5,50.143H19.786a1.641,1.641,0,0,0,1.6-1.29l1.787-8.339a1.624,1.624,0,0,0-.326-1.368ZM9.427,53.769a.725.725,0,1,1-.725-.725A.726.726,0,0,1,9.427,53.769Zm7.977,0a.725.725,0,1,1-.725-.725A.726.726,0,0,1,17.4,53.769ZM21.751,40.21l-1.787,8.339a.183.183,0,0,1-.178.144H5.3l-1.214-8.7H21.574a.181.181,0,0,1,.177.219Z" transform="translate(0 -36.002)" fill="#0096f2"></path>
+                          </svg>
+                        </div><span class="menu_font makeOrder"> Заказать</span></a>
+                    </div>
+                    <div class="slider__content-item swiper-slide">
+                      <h4 class="services_font">Telegram(Рф)</h4>
+                      <ul> 
+                        <li><span class="blue_font">(Архив диалогов VK.com)</span>
+                          <div class="price">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14.351" height="26.421" viewBox="0 0 14.351 26.421">
+                              <g id="dollar-tag" transform="translate(-109.301)">
+                                <g id="Group_366" data-name="Group 366" transform="translate(109.301)">
+                                  <g id="Group_365" data-name="Group 365" transform="translate(0)">
+                                    <path id="Path_1127" data-name="Path 1127" d="M123.16,8.951l-3.633-4.594a3.912,3.912,0,0,0-2.5-1.436V.552a.552.552,0,1,0-1.1,0V2.921a3.839,3.839,0,0,0-2.49,1.436l-3.644,4.6a2.3,2.3,0,0,0-.491,1.414v13.8a2.262,2.262,0,0,0,2.269,2.253h9.8a2.262,2.262,0,0,0,2.28-2.242V10.37A2.328,2.328,0,0,0,123.16,8.951ZM116.479,8.3a1.607,1.607,0,1,1-1.607,1.607A1.6,1.6,0,0,1,116.479,8.3Zm6.074,15.864a1.157,1.157,0,0,1-1.176,1.149h-9.8a1.157,1.157,0,0,1-1.176-1.149V10.37a1.159,1.159,0,0,1,.254-.729l3.639-4.6a2.769,2.769,0,0,1,1.629-1V7.256a2.713,2.713,0,1,0,1.1,0V4.042a2.791,2.791,0,0,1,.657.221,2.754,2.754,0,0,1,.966.779L122.3,9.635a1.185,1.185,0,0,1,.254.734Z" transform="translate(-109.301)" fill="#d9efff"></path>
+                                  </g>
+                                </g>
+                                <g id="Group_368" data-name="Group 368" transform="translate(114.633 15.549)">
+                                  <g id="Group_367" data-name="Group 367" transform="translate(0)">
+                                    <path id="Path_1128" data-name="Path 1128" d="M209.479,286.189a1.849,1.849,0,0,0-1.761-1.292.74.74,0,1,1,.74-.74.552.552,0,0,0,1.1,0,1.849,1.849,0,0,0-1.292-1.761v-.243a.552.552,0,1,0-1.1,0v.243a1.845,1.845,0,0,0,.552,3.606.74.74,0,1,1-.74.74.552.552,0,0,0-1.1,0,1.849,1.849,0,0,0,1.292,1.761v.276a.552.552,0,0,0,1.1,0V288.5A1.848,1.848,0,0,0,209.479,286.189Z" transform="translate(-205.871 -281.6)" fill="#d9efff"></path>
+                                  </g>
+                                </g>
+                              </g>
+                            </svg><span class="subtitle_font">от 100$</span>
+                          </div>
+                        </li>
+                      </ul><a class="order" href="#">
+                        <div class="order-truck">
+                          <svg id="cart" xmlns="http://www.w3.org/2000/svg" width="23.206" height="19.942" viewBox="0 0 23.206 19.942">
+                            <path id="Path_1134" data-name="Path 1134" d="M22.843,39.146a1.625,1.625,0,0,0-1.269-.606H3.886l-.158-1.132A1.639,1.639,0,0,0,2.112,36H.725a.725.725,0,1,0,0,1.45H2.112a.182.182,0,0,1,.18.156L4.249,51.638a1.639,1.639,0,0,0,1.616,1.406h.786a2.176,2.176,0,1,0,4.1,0h3.875a2.176,2.176,0,1,0,4.1,0H20.3a.725.725,0,1,0,0-1.45H5.865a.182.182,0,0,1-.18-.156L5.5,50.143H19.786a1.641,1.641,0,0,0,1.6-1.29l1.787-8.339a1.624,1.624,0,0,0-.326-1.368ZM9.427,53.769a.725.725,0,1,1-.725-.725A.726.726,0,0,1,9.427,53.769Zm7.977,0a.725.725,0,1,1-.725-.725A.726.726,0,0,1,17.4,53.769ZM21.751,40.21l-1.787,8.339a.183.183,0,0,1-.178.144H5.3l-1.214-8.7H21.574a.181.181,0,0,1,.177.219Z" transform="translate(0 -36.002)" fill="#0096f2"></path>
+                          </svg>
+                        </div><span class="menu_font makeOrder"> Заказать</span></a>
                     </div>
                     <div class="slider__content-item swiper-slide">
                       <h4 class="services_font">Vk.com</h4>
@@ -142,63 +236,7 @@
                           <svg id="cart" xmlns="http://www.w3.org/2000/svg" width="23.206" height="19.942" viewBox="0 0 23.206 19.942">
                             <path id="Path_1134" data-name="Path 1134" d="M22.843,39.146a1.625,1.625,0,0,0-1.269-.606H3.886l-.158-1.132A1.639,1.639,0,0,0,2.112,36H.725a.725.725,0,1,0,0,1.45H2.112a.182.182,0,0,1,.18.156L4.249,51.638a1.639,1.639,0,0,0,1.616,1.406h.786a2.176,2.176,0,1,0,4.1,0h3.875a2.176,2.176,0,1,0,4.1,0H20.3a.725.725,0,1,0,0-1.45H5.865a.182.182,0,0,1-.18-.156L5.5,50.143H19.786a1.641,1.641,0,0,0,1.6-1.29l1.787-8.339a1.624,1.624,0,0,0-.326-1.368ZM9.427,53.769a.725.725,0,1,1-.725-.725A.726.726,0,0,1,9.427,53.769Zm7.977,0a.725.725,0,1,1-.725-.725A.726.726,0,0,1,17.4,53.769ZM21.751,40.21l-1.787,8.339a.183.183,0,0,1-.178.144H5.3l-1.214-8.7H21.574a.181.181,0,0,1,.177.219Z" transform="translate(0 -36.002)" fill="#0096f2"></path>
                           </svg>
-                        </div><span class="menu_font"> Заказать</span></a>
-                    </div>
-                    <div class="slider__content-item swiper-slide">
-                      <h4 class="services_font">Vk.com</h4>
-                      <ul> 
-                        <li><span class="blue_font">(Архив диалогов VK.com)</span>
-                          <div class="price">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14.351" height="26.421" viewBox="0 0 14.351 26.421">
-                              <g id="dollar-tag" transform="translate(-109.301)">
-                                <g id="Group_366" data-name="Group 366" transform="translate(109.301)">
-                                  <g id="Group_365" data-name="Group 365" transform="translate(0)">
-                                    <path id="Path_1127" data-name="Path 1127" d="M123.16,8.951l-3.633-4.594a3.912,3.912,0,0,0-2.5-1.436V.552a.552.552,0,1,0-1.1,0V2.921a3.839,3.839,0,0,0-2.49,1.436l-3.644,4.6a2.3,2.3,0,0,0-.491,1.414v13.8a2.262,2.262,0,0,0,2.269,2.253h9.8a2.262,2.262,0,0,0,2.28-2.242V10.37A2.328,2.328,0,0,0,123.16,8.951ZM116.479,8.3a1.607,1.607,0,1,1-1.607,1.607A1.6,1.6,0,0,1,116.479,8.3Zm6.074,15.864a1.157,1.157,0,0,1-1.176,1.149h-9.8a1.157,1.157,0,0,1-1.176-1.149V10.37a1.159,1.159,0,0,1,.254-.729l3.639-4.6a2.769,2.769,0,0,1,1.629-1V7.256a2.713,2.713,0,1,0,1.1,0V4.042a2.791,2.791,0,0,1,.657.221,2.754,2.754,0,0,1,.966.779L122.3,9.635a1.185,1.185,0,0,1,.254.734Z" transform="translate(-109.301)" fill="#d9efff"></path>
-                                  </g>
-                                </g>
-                                <g id="Group_368" data-name="Group 368" transform="translate(114.633 15.549)">
-                                  <g id="Group_367" data-name="Group 367" transform="translate(0)">
-                                    <path id="Path_1128" data-name="Path 1128" d="M209.479,286.189a1.849,1.849,0,0,0-1.761-1.292.74.74,0,1,1,.74-.74.552.552,0,0,0,1.1,0,1.849,1.849,0,0,0-1.292-1.761v-.243a.552.552,0,1,0-1.1,0v.243a1.845,1.845,0,0,0,.552,3.606.74.74,0,1,1-.74.74.552.552,0,0,0-1.1,0,1.849,1.849,0,0,0,1.292,1.761v.276a.552.552,0,0,0,1.1,0V288.5A1.848,1.848,0,0,0,209.479,286.189Z" transform="translate(-205.871 -281.6)" fill="#d9efff"></path>
-                                  </g>
-                                </g>
-                              </g>
-                            </svg><span class="subtitle_font">от 100$</span>
-                          </div>
-                        </li>
-                      </ul><a class="order" href="#">
-                        <div class="order-truck">
-                          <svg id="cart" xmlns="http://www.w3.org/2000/svg" width="23.206" height="19.942" viewBox="0 0 23.206 19.942">
-                            <path id="Path_1134" data-name="Path 1134" d="M22.843,39.146a1.625,1.625,0,0,0-1.269-.606H3.886l-.158-1.132A1.639,1.639,0,0,0,2.112,36H.725a.725.725,0,1,0,0,1.45H2.112a.182.182,0,0,1,.18.156L4.249,51.638a1.639,1.639,0,0,0,1.616,1.406h.786a2.176,2.176,0,1,0,4.1,0h3.875a2.176,2.176,0,1,0,4.1,0H20.3a.725.725,0,1,0,0-1.45H5.865a.182.182,0,0,1-.18-.156L5.5,50.143H19.786a1.641,1.641,0,0,0,1.6-1.29l1.787-8.339a1.624,1.624,0,0,0-.326-1.368ZM9.427,53.769a.725.725,0,1,1-.725-.725A.726.726,0,0,1,9.427,53.769Zm7.977,0a.725.725,0,1,1-.725-.725A.726.726,0,0,1,17.4,53.769ZM21.751,40.21l-1.787,8.339a.183.183,0,0,1-.178.144H5.3l-1.214-8.7H21.574a.181.181,0,0,1,.177.219Z" transform="translate(0 -36.002)" fill="#0096f2"></path>
-                          </svg>
-                        </div><span class="menu_font"> Заказать</span></a>
-                    </div>
-                    <div class="slider__content-item swiper-slide">
-                      <h4 class="services_font">Vk.com</h4>
-                      <ul> 
-                        <li><span class="blue_font">(Архив диалогов VK.com)</span>
-                          <div class="price">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14.351" height="26.421" viewBox="0 0 14.351 26.421">
-                              <g id="dollar-tag" transform="translate(-109.301)">
-                                <g id="Group_366" data-name="Group 366" transform="translate(109.301)">
-                                  <g id="Group_365" data-name="Group 365" transform="translate(0)">
-                                    <path id="Path_1127" data-name="Path 1127" d="M123.16,8.951l-3.633-4.594a3.912,3.912,0,0,0-2.5-1.436V.552a.552.552,0,1,0-1.1,0V2.921a3.839,3.839,0,0,0-2.49,1.436l-3.644,4.6a2.3,2.3,0,0,0-.491,1.414v13.8a2.262,2.262,0,0,0,2.269,2.253h9.8a2.262,2.262,0,0,0,2.28-2.242V10.37A2.328,2.328,0,0,0,123.16,8.951ZM116.479,8.3a1.607,1.607,0,1,1-1.607,1.607A1.6,1.6,0,0,1,116.479,8.3Zm6.074,15.864a1.157,1.157,0,0,1-1.176,1.149h-9.8a1.157,1.157,0,0,1-1.176-1.149V10.37a1.159,1.159,0,0,1,.254-.729l3.639-4.6a2.769,2.769,0,0,1,1.629-1V7.256a2.713,2.713,0,1,0,1.1,0V4.042a2.791,2.791,0,0,1,.657.221,2.754,2.754,0,0,1,.966.779L122.3,9.635a1.185,1.185,0,0,1,.254.734Z" transform="translate(-109.301)" fill="#d9efff"></path>
-                                  </g>
-                                </g>
-                                <g id="Group_368" data-name="Group 368" transform="translate(114.633 15.549)">
-                                  <g id="Group_367" data-name="Group 367" transform="translate(0)">
-                                    <path id="Path_1128" data-name="Path 1128" d="M209.479,286.189a1.849,1.849,0,0,0-1.761-1.292.74.74,0,1,1,.74-.74.552.552,0,0,0,1.1,0,1.849,1.849,0,0,0-1.292-1.761v-.243a.552.552,0,1,0-1.1,0v.243a1.845,1.845,0,0,0,.552,3.606.74.74,0,1,1-.74.74.552.552,0,0,0-1.1,0,1.849,1.849,0,0,0,1.292,1.761v.276a.552.552,0,0,0,1.1,0V288.5A1.848,1.848,0,0,0,209.479,286.189Z" transform="translate(-205.871 -281.6)" fill="#d9efff"></path>
-                                  </g>
-                                </g>
-                              </g>
-                            </svg><span class="subtitle_font">от 100$</span>
-                          </div>
-                        </li>
-                      </ul><a class="order" href="#">
-                        <div class="order-truck">
-                          <svg id="cart" xmlns="http://www.w3.org/2000/svg" width="23.206" height="19.942" viewBox="0 0 23.206 19.942">
-                            <path id="Path_1134" data-name="Path 1134" d="M22.843,39.146a1.625,1.625,0,0,0-1.269-.606H3.886l-.158-1.132A1.639,1.639,0,0,0,2.112,36H.725a.725.725,0,1,0,0,1.45H2.112a.182.182,0,0,1,.18.156L4.249,51.638a1.639,1.639,0,0,0,1.616,1.406h.786a2.176,2.176,0,1,0,4.1,0h3.875a2.176,2.176,0,1,0,4.1,0H20.3a.725.725,0,1,0,0-1.45H5.865a.182.182,0,0,1-.18-.156L5.5,50.143H19.786a1.641,1.641,0,0,0,1.6-1.29l1.787-8.339a1.624,1.624,0,0,0-.326-1.368ZM9.427,53.769a.725.725,0,1,1-.725-.725A.726.726,0,0,1,9.427,53.769Zm7.977,0a.725.725,0,1,1-.725-.725A.726.726,0,0,1,17.4,53.769ZM21.751,40.21l-1.787,8.339a.183.183,0,0,1-.178.144H5.3l-1.214-8.7H21.574a.181.181,0,0,1,.177.219Z" transform="translate(0 -36.002)" fill="#0096f2"></path>
-                          </svg>
-                        </div><span class="menu_font"> Заказать</span></a>
+                        </div><span class="menu_font makeOrder"> Заказать</span></a>
                     </div>
                   </div>
                   <div class="swiper__controls">
@@ -457,7 +495,8 @@
       </div>
     </section>
     <script src="static//js//libs.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.9/fullpage.min.js"></script><script type="text/javascript"> var onloadCallback = function() { console.log("grecaptcha is ready!"); };</script>
+<script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer> </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="static//js//main.js"></script>
     <script src="static//js//services.js"></script>

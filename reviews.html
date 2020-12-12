@@ -47,14 +47,20 @@
         <section class="section">
           <div id="review">
             <div class="add_comment__content">
+              <div class="message">
+                <div class="message__content danger">
+                  <div id="message_cross"></div>
+                  <p class="headings_font">Error</p>
+                </div>
+              </div>
               <div id="reviewCross"></div>
               <h2 class="blue_font">Оставить коментарий</h2>
               <h3 class="headings_font">Оставить коментарий</h3>
-              <form action="">
-                <label class="review_font" for="name">Ваше имя</label>
-                <input class="medium_font" type="text" id="name" name="name">
-                <label class="review_font" for="comment">Коментарий</label>
-                <textarea class="medium_font" name="comment" id="comment"> </textarea>
+              <form action="" id="addReview">
+                <label class="review_font" for="name">Ваше имя*</label>
+                <input class="medium_font" type="text" id="name" name="name" required>
+                <label class="review_font" for="comment">Коментарий*</label>
+                <textarea class="medium_font" name="comment" id="comment" required> </textarea>
                 <button class="medium_font" type="submit">Оставить коментарий</button>
               </form>
             </div>
